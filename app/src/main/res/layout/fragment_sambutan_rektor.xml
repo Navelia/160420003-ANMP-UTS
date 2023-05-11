@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.SambutanRektorFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnYayasan"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Kembali ke sambutan ketua yayasan"
+                    android:textColor="#DD0700"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/rektor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Sambutan Rektor"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnYayasan" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="32dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:text="SatuJiwa, Legacy UBAYA demi Masa Depan"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Raeni, dari bangku (orang tua penarik) becak ke kursi S-3 di Inggris. Itulah judul tulisan dari sebuah terbitan media daring (online) yang masih saya ingat beberapa tahun lalu."
+                            app:layout_constraintEnd_toEndOf="@+id/textView18"
+                            app:layout_constraintStart_toStartOf="@+id/textView18"
+                            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Kita berharap SatuJiwa menjadi gerakan urun dana (crowdfunding) yang akan meninggalkan legacy dan impact jangka panjang bagi generasi penerus bangsa. Khususnya mahasiswa UBAYA. Tentu, tidak perlu mengharapkan ceritanya menjadi sedramatis Raeni."
+                            app:layout_constraintEnd_toEndOf="@+id/textView19"
+                            app:layout_constraintStart_toStartOf="@+id/textView19"
+                            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Pandemi Covid-19 menyebabkan penurunan aktivitas perekonomian dalam skala besar secara global maupun lokal. Pertumbuhan ekonomi Indonesia pada kuartal I/2020 anjlok menjadi 2,9%, dari sebelumnya rata-rata di atas 5%. Padahal, dampak pandemi baru dimulai pada pertengahan Maret 2020."
+                            app:layout_constraintEnd_toEndOf="@+id/textView20"
+                            app:layout_constraintStart_toStartOf="@+id/textView20"
+                            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Pertumbuhan ekonomi kuartal berikutnya diperkirakan turun lebih dalam lagi dengan potensi pertumbuhan negatif. Artinya, sektor riil akan sangat terpukul. PHK bakal lebih membeludak. Kondisi ini diperkirakan terjadi dalam jangka panjang sekaligus memunculkan situasi new normal yang akan mengakibatkan bisnis-bisnis tertentu akan tetap tertekan secara jangka panjang. Di dalamnya, ikut terdampak orang tua dan penyandang dana pendidikan mahasiswa UBAYA serta keluarga besar UBAYA."
+                            app:layout_constraintEnd_toEndOf="@+id/textView21"
+                            app:layout_constraintStart_toStartOf="@+id/textView21"
+                            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+                        <TextView
+                            android:id="@+id/textView24"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Karena itu, gerakan SatuJiwa ditujukan menggalang financial support bagi mahasiswa maupun keluarga besar UBAYA yang membutuhkan. Urun dana ini direncanakan memanfaatkan partisipasi semua stakeholders UBAYA: dosen, karyawan, mahasiswa, alumni, hingga perusahaan/pengusaha dll."
+                            app:layout_constraintEnd_toEndOf="@+id/textView22"
+                            app:layout_constraintStart_toStartOf="@+id/textView22"
+                            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Alumni yang sudah berhasil memiliki perusahaan dapat mendanai sebagian mahasiswa yang terkena dampak COVID-19. Mahasiswa yang lebih mampu bisa menopang temannya yang kesusahan, dan seterusnya. Berapa pun besarnya. Support bisa diberikan secara umum hingga spesifik kepada mahasiswa atau target tertentu. Sebaliknya, keluarga besar UBAYA yang membutuhkan juga bisa mengajukan di SatuJiwa."
+                            app:layout_constraintEnd_toEndOf="@+id/textView24"
+                            app:layout_constraintStart_toStartOf="@+id/textView24"
+                            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+                        <TextView
+                            android:id="@+id/textView26"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="sans-serif"
+                            android:text="Momentumnya memang pandemi Covid-19. Namun, SatuJiwa akan terus disempurnakan ke depan. Bahkan selepas pandemi berakhir. Inisiatif urun dana sudah jamak dipakai di era industri 4.0., termasuk oleh kampus-kampus ternama di luar negeri. Mereka memanfaatkan sistem informasi dan teknologi pembayaran yang sudah mapan, sehingga memungkinkan beraneka portofolio kontribusi masuk di sana. Namun, di dunia pendidikan di Surabaya, bahkan mungkin di Tanah Air, UBAYA bisa jadi merupakan inisiator awal aplikasi urun dana berkesinambungan yang dikembangkan secara mandiri oleh internal universitas."
+                            app:layout_constraintEnd_toEndOf="@+id/textView25"
+                            app:layout_constraintStart_toStartOf="@+id/textView25"
+                            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Akhirnya, selamat berpartisipasi di SatuJiwa. Bersama kita eratkan solidaritas dan kebersamaan keluarga besar UBAYA! (*)"
+                            app:layout_constraintEnd_toEndOf="@+id/textView26"
+                            app:layout_constraintStart_toStartOf="@+id/textView26"
+                            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+                        <TextView
+                            android:id="@+id/textView29"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Rektor,"
+                            app:layout_constraintEnd_toEndOf="@+id/textView27"
+                            app:layout_constraintStart_toStartOf="@+id/textView27"
+                            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+                        <TextView
+                            android:id="@+id/textView30"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="Benny Lianto"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/textView29"
+                            app:layout_constraintStart_toStartOf="@+id/textView29"
+                            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

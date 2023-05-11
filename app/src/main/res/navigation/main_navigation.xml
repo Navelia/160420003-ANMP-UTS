@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/itemHome">
+
+    <fragment
+        android:id="@+id/itemHome"
+        android:name="com.ncents.a160420003satujiwa.view.DonationListFragment"
+        android:label="SatuJiwa - 160420003"
+        tools:layout="@layout/fragment_donation_list">
+        <action
+            android:id="@+id/actionDonationDetail"
+            app:destination="@id/donationDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemBerita"
+        android:name="com.ncents.a160420003satujiwa.view.BeritaListFragment"
+        android:label="Berita SatuJiwa"
+        tools:layout="@layout/fragment_berita_list">
+        <action
+            android:id="@+id/actionBeritaDetail"
+            app:destination="@id/beritaDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/beritaDetailFragment"
+        android:name="com.ncents.a160420003satujiwa.view.BeritaDetailFragment"
+        android:label="Berita SatuJiwa"
+        tools:layout="@layout/fragment_berita_detail">
+        <argument
+            android:name="berita_id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_beritaDetailFragment_to_itemBerita"
+            app:destination="@id/itemBerita" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemAbout"
+        android:name="com.ncents.a160420003satujiwa.view.AboutFragment"
+        android:label="About SatuJiwa"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/itemSambutan"
+        android:name="com.ncents.a160420003satujiwa.view.SambutanYayasanFragment"
+        android:label="Sambutan SatuJiwa"
+        tools:layout="@layout/fragment_sambutan_yayasan">
+        <action
+            android:id="@+id/actionSambutanRektor"
+            app:destination="@id/sambutanRektorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sambutanRektorFragment"
+        android:name="com.ncents.a160420003satujiwa.view.SambutanRektorFragment"
+        android:label="Sambutan SatuJiwa"
+        tools:layout="@layout/fragment_sambutan_rektor">
+        <action
+            android:id="@+id/actionSambutanYayasan"
+            app:destination="@id/itemSambutan" />
+    </fragment>
+    <fragment
+        android:id="@+id/donationDetailFragment"
+        android:name="com.ncents.a160420003satujiwa.view.DonationDetailFragment"
+        android:label="Donasi SatuJiwa"
+        tools:layout="@layout/fragment_donation_detail">
+        <argument
+            android:name="donation_id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_donationDetailFragment_to_itemHome"
+            app:destination="@id/itemHome" />
+        <action
+            android:id="@+id/actionContribution"
+            app:destination="@id/kontribusiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kontribusiFragment"
+        android:name="com.ncents.a160420003satujiwa.view.KontribusiFragment"
+        android:label="fragment_kontribusi"
+        tools:layout="@layout/fragment_kontribusi" >
+        <action
+            android:id="@+id/actionBackToDonationDetail"
+            app:destination="@id/donationDetailFragment"
+            app:popUpTo="@id/donationDetailFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="donation_id"
+            app:argType="string" />
+    </fragment>
+</navigation>

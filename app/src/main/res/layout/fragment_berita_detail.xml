@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.BeritaDetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtJudulDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Judul Berita"
+            android:textAlignment="center"
+            android:textColor="#3C4858"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgBeritaDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/txtJudulDetail"
+            app:layout_constraintStart_toStartOf="@+id/txtJudulDetail"
+            app:layout_constraintTop_toBottomOf="@+id/txtJudulDetail"
+            tools:src="@tools:sample/avatars" />
+
+        <ProgressBar
+            android:id="@+id/progressBarDetailBerita"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/imgBeritaDetail"
+            app:layout_constraintEnd_toEndOf="@+id/imgBeritaDetail"
+            app:layout_constraintStart_toStartOf="@+id/imgBeritaDetail"
+            app:layout_constraintTop_toTopOf="@+id/imgBeritaDetail" />
+
+        <TextView
+            android:id="@+id/txtTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Dirilis pada xx-xx-xxxx"
+            app:layout_constraintStart_toStartOf="@+id/imgBeritaDetail"
+            app:layout_constraintTop_toBottomOf="@+id/imgBeritaDetail" />
+
+        <TextView
+            android:id="@+id/txtBeritaIsi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Isi Berita"
+            app:layout_constraintEnd_toEndOf="@+id/imgBeritaDetail"
+            app:layout_constraintStart_toStartOf="@+id/imgBeritaDetail"
+            app:layout_constraintTop_toBottomOf="@+id/txtTanggal" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
